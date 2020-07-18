@@ -2,6 +2,7 @@ import React from 'react';
 import BowlingMap from './TierOne/bowlingMap.jsx';
 import BowlingTotal from './TierOne/total.jsx';
 import ResetGame from './TierOne/resetGame.jsx';
+import EnterScore from './TierOne/enterScore.jsx';
 
 class Main extends React.Component{
   constructor(props){
@@ -21,6 +22,8 @@ class Main extends React.Component{
       ],
       TenthFrameThirdBowl: false,
       TotalScore: 0,
+      strike: false,
+      spare: false,
     }
   }
 
@@ -29,6 +32,10 @@ class Main extends React.Component{
   }
 
   spare(event){
+    event.preventDefault();
+  }
+
+  bowl(event){
     event.preventDefault();
   }
 
@@ -43,6 +50,9 @@ class Main extends React.Component{
         </div>
         <div className="mainBowlingReset">
           <ResetGame />
+        </div>
+        <div className="mainBowlingEnterScore">
+          <EnterScore />
         </div>
       </div>
     )

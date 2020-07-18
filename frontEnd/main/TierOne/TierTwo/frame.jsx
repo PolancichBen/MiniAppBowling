@@ -10,7 +10,7 @@ const Frame = (props) => {
         <FrameScore bowls={props.frame.scores} frameNumber={props.frameNum}/>
       </div>
       <div className="eachFrameTotalContainer">
-        <FrameTotal score={props.frame.FrameScore} frameNumber={props.frameNum}/>
+        <FrameTotal score={props.frame.FrameScore} frameNumber={parseInt(props.frameNum) + 1}/>
       </div>
     </div>
   );
