@@ -4,10 +4,12 @@ import Frame from './TierTwo/frame.jsx'
 
 
 const BowlingMap = (props) =>{
-  props.frames.map((frame,i)=>{
+  return props.frames.map((frame,i)=>{
+  return (
     <div key={i}>
-      <Frame frame={frame}/>
+      <Frame frame={frame} frameNum={i}/>
     </div>
+    )
   })
 }
 
