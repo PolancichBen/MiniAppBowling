@@ -5,11 +5,11 @@ import FrameTotal from "./TierThree/frameTotal.jsx";
 const Frame = (props) => {
   console.log(props);
   return (
-    <div className="EachFrame">
-      <div className="EachFrameScoreContainer">
+    <div className="eachFrame">
+      <div className="eachFrameScoreContainer">
         <FrameScore bowls={props.frame.scores} frameNumber={props.frameNum}/>
       </div>
-      <div className="EachFrameTotalContainer">
+      <div className="eachFrameTotalContainer">
         <FrameTotal score={props.frame.FrameScore} frameNumber={props.frameNum}/>
       </div>
     </div>

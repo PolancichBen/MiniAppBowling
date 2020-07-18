@@ -1,0 +1,95 @@
+/* Sanitize HTML */
+html{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Main Component */
+.mainBowling {
+  border: 2px solid green;
+}
+
+.mainBowlingTotal{
+  border: 2px solid yellow;
+}
+
+.mainBowlingMap{
+  border: 2px solid purple;
+  display: flex;
+}
+
+.mainBowlingReset{
+  border: 2px solid red;
+}
+
+/* END OF MAIN */
+/* Starting Tier One */
+
+.eachFrameContainer{
+  border: 2px solid orange;
+  margin: 0px 5px;
+}
+
+.resetGame{
+  border: 2px solid orchid;
+}
+
+.gameTotal{
+  border: 2px solid olive;
+}
+
+/* END OF TIER ONE */
+/* Starting Tier Two */
+
+.eachFrame{
+  border: 2px solid palevioletred;
+  display: flex;
+  flex-direction: column;
+}
+
+.eachFrameScoreContainer{
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.eachFrameTotalContainer{
+  border: 2px solid paleturquoise;
+}
+
+/* END OF TIER TWO */
+/* Starting Tier Three */
+
+.notLastFrame{
+  border: 2px solid darkmagenta;
+  display: flex;
+}
+
+.lastFrame{
+  border: 2px solid teal;
+  display: flex;
+}
+
+.bowlOne{
+  border: 2px solid tomato;
+}
+
+.bowlTwo{
+  border: 2px solid red;
+}
+
+.bowlThree{
+  border: 2px solid turquoise;
+
+}
+
+/* END OF TIER THREE */

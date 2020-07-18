@@ -4,7 +4,7 @@ const FrameScore = (props) => {
   console.log(props);
   if (props.frameNumber === 9) {
     return (
-      <div className="LastFrame">
+      <div className="lastFrame">
         <div className="bowlOne">
           {/* {props.bowlOne} */}
           One
@@ -21,7 +21,7 @@ const FrameScore = (props) => {
     )
   } else {
     return (
-      <div className="NotLastFrame">
+      <div className="notLastFrame">
         <div className="bowlOne">
           {/* {props.bowlOne} */}
           One
