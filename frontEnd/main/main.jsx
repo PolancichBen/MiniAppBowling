@@ -5,7 +5,7 @@ import ResetGame from './TierOne/resetGame.jsx';
 
 class Main extends React.Component{
   constructor(props){
-    super(props)
+    super(props);
     this.state ={
       frames:[
         { scores:{ bowlOne: null, bowlTwo: null,}, FrameScore: null },
@@ -24,12 +24,25 @@ class Main extends React.Component{
     }
   }
 
+  strike (event){
+   event.preventDefault();
+  }
+
+  spare(event){
+    event.preventDefault();
+  }
+
   render (){
     return (
-      <div>
-        Hooked Up
-        <div>
+      <div className="mainBowling">
+        <div className="mainBowlingTotal">
+          <BowlingTotal score={this.state.TotalScore}/>
+        </div>
+        <div className="mainBowlingMap">
           <BowlingMap frames={this.state.frames}/>
+        </div>
+        <div className="mainBowlingReset">
+          <ResetGame />
         </div>
       </div>
     )

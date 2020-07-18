@@ -3,9 +3,10 @@ import React from 'react';
 
 
 const FrameTotal = (props) =>{
+  console.log(props)
   return(
-    <div>
-      null
+    <div className="InnerFrameTotal">
+      frame {props.frameNumber} total
     </div>
   )
 
