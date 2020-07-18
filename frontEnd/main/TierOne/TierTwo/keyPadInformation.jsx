@@ -1,10 +1,11 @@
 import React from 'react';
 
 
-const KeypadInformation = () =>{
+const KeypadInformation = (props) =>{
   return (
-    <div>
+    <div className="keyPadInformationHead">
       null
+      {/* Needs Current Frame, Current Bowl, And what was selected */}
     </div>
   )
 }

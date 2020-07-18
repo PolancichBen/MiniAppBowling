@@ -5,12 +5,12 @@ import KeypadKeys from './TierTwo/keyPadKeys.jsx';
 
 const EnterScore = (props) =>{
   return (
-    <div>
-      <div>
+    <div className="keyPadContainer">
+      <div className="keyPadInformationMain">
         <KeypadInformation />
       </div>
-      <div>
-        <KeypadKeys />
+      <div className="keyPadKeysMain">
+        <KeypadKeys KeyPress={props.KeypadNumberKeyPress}/>
       </div>
     </div>
   )

@@ -25,18 +25,11 @@ class Main extends React.Component{
       strike: false,
       spare: false,
     }
+    this.KeypadNumberKeyHandler = this.KeypadNumberKeyHandler.bind(this);
   }
 
-  strike (event){
-   event.preventDefault();
-  }
-
-  spare(event){
-    event.preventDefault();
-  }
-
-  bowl(event){
-    event.preventDefault();
+  KeypadNumberKeyHandler(keyevent){
+    console.log(keyevent)
   }
 
   render (){
@@ -52,7 +45,7 @@ class Main extends React.Component{
           <ResetGame />
         </div>
         <div className="mainBowlingEnterScore">
-          <EnterScore />
+          <EnterScore KeypadNumberKeyPress={this.KeypadNumberKeyHandler}/>
         </div>
       </div>
     )
