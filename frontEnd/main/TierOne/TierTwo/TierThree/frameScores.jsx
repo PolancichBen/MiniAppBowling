@@ -1,7 +1,6 @@
 import React from "react";
 
 const FrameScore = (props) => {
-  console.log(props);
   if (props.frameNumber === 9) {
     return (
       <div className="lastFrame">

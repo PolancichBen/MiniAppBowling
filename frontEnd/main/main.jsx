@@ -28,8 +28,9 @@ class Main extends React.Component{
     this.KeypadNumberKeyHandler = this.KeypadNumberKeyHandler.bind(this);
   }
 
-  KeypadNumberKeyHandler(keyevent){
-    console.log(keyevent)
+  KeypadNumberKeyHandler(event){
+    console.log(event)
+    // console.log(event.target)
   }
 
   render (){
