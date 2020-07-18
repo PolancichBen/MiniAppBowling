@@ -66,7 +66,10 @@ class Main extends React.Component {
         firstBowl: false,
         TotalScore: newScore,
         frames: newBuiltFrame,
+        numberToSaveAsFrameFirstNumber: 0,
+        numberToSaveAsFrameSecondNumber: 0,
         currentFrame: parseInt(this.state.currentFrame) + 1,
+
       })
       console.log('Next Frame Started', parseInt(this.state.currentFrame) + 1)
       console.log('Current Total Score', this.state.TotalScore)
@@ -120,8 +123,13 @@ class Main extends React.Component {
       }
       if (event === '/' && this.state.firstBowl === true) {
         //if spare
+        alert('SPARE!')
+      } else if (event === '/' && this.state.firstBowl === false) {
+        //if spare
+        alert('Did you mean X?')
       }
       if (event === 'X' && this.state.firstBowl === false) {
+        alert('STRIKE!')
         //if spare
       }
     }
