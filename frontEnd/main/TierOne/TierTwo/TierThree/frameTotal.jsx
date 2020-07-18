@@ -5,7 +5,7 @@ import React from 'react';
 const FrameTotal = (props) =>{
   return(
     <div className="InnerFrameTotal">
-      frame {props.frameNumber} total
+      {props.score}
     </div>
   )
 

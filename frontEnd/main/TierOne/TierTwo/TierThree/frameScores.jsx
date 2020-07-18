@@ -5,16 +5,13 @@ const FrameScore = (props) => {
     return (
       <div className="lastFrame">
         <div className="bowlOne">
-          {/* {props.bowlOne} */}
-          One
+          {props.bowls.bowlOne}
         </div>
         <div className="bowlTwo">
-          {/* {props.bowlTwo} */}
-          Two
+          {props.bowls.bowlTwo}
         </div>
         <div className="bowlThree">
-          {/* {props.bowlThree} */}
-          Three
+          {props.bowls.bowlThree}
         </div>
       </div>
     )
@@ -22,12 +19,10 @@ const FrameScore = (props) => {
     return (
       <div className="notLastFrame">
         <div className="bowlOne">
-          {/* {props.bowlOne} */}
-          One
+          {props.bowls.bowlOne}
         </div>
         <div className="bowlTwo">
-          {/* {props.bowlTwo} */}
-          Two
+          {props.bowls.bowlTwo}
         </div>
       </div>
     )

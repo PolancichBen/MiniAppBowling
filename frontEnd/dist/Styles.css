@@ -35,6 +35,7 @@ body{
 .eachFrameContainer{
   border: 2px solid orange;
   margin: 0px 5px;
+  width: 9%;
 }
 
 .keyPadContainer {
@@ -76,7 +77,7 @@ body{
   border: 2px solid blue;
   display: flex;
   flex-direction: row;
-  width: fit-content;
+  width: 100%;
   align-self: flex-end;
 }
 
@@ -163,24 +164,31 @@ body{
 .notLastFrame{
   border: 2px solid darkmagenta;
   display: flex;
+  place-content: flex-end;
+  width: 100%;
+  height: 30px;
 }
 
 .lastFrame{
   border: 2px solid teal;
   display: flex;
+  width:100%;
+  height: 30px;
 }
 
 .bowlOne{
   border: 2px solid tomato;
+  width: 33.33%;
 }
 
 .bowlTwo{
   border: 2px solid red;
+  width: 33.33%;
 }
 
 .bowlThree{
   border: 2px solid turquoise;
-
+  width: 33.33%;
 }
 
 /* END OF TIER THREE */
